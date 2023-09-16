@@ -6,15 +6,20 @@
   <meta name="description" content="сайт для хранения личной коллекции деталей лего">
   <title>Личная коллекция LEGO</title>
   <link rel="icon" type="image/x-icon" href="doc/lego.png">
-  <!--  <link href="css/outline-prototype-label.css" rel="stylesheet">-->
-<!--  <link href="css/outline-prototype-safe.css" rel="stylesheet">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
   <h1>
     Добро пожаловать на сайт по хранению личной коллекции LEGO!
   </h1>
-  <pre>
+  <div class="logotype">
+
+    <pre class="logotype__icon">
 ⠀⠀⠀⠀⠀⠀ ⣀⣤⣶⣶⣶⣶⣤⡀⠀⠀⢀⣠⣴⣶⣶⣾⣿⣿⣷⣶⣤⣀⠀⢀⣠⣴⣶⣶⣶⣶⣶⣶⣶⣤⣀⠀⠀⠀⢀⣠⣤⣶⣶⣶⣶⣶⣶⣤⣄⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⠿⠛⠛⠿⣿⣿⣄⣴⣿⣿⠿⠟⠛⠛⠛⠛⠛⠻⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⠛⠛⠿⢿⣿⣷⣄⣴⣿⣿⡿⠿⠛⠛⠛⠛⠻⢿⣿⣿⣄⠀
 ⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⠀⠀⠀⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣆
@@ -28,8 +33,12 @@
 ⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⣴⣿⣿⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⣰⣿⣿⠃⠀⠀⠀
 ⢿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠃⠀⠀⠀⠀
 ⠘⢿⣿⣷⣤⣤⣤⣤⣤⣴⣾⣿⣿⣿⣿⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⣿⣿⣷⣤⣤⣄⣠⣤⣤⣶⣿⣿⡿⠋⠙⢿⣿⣷⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀⠀
-⠀⠀⠙⠻⠿⠿⣿⡿⠿⠿⠟⠋⠁⠉⠛⠿⢿⣿⣿⣿⠿⠿⠟⠋⠀⠈⠙⠻⠿⣿⣿⣿⡿⠿⠿⠛⠁⠀⠀⠀⠀⠙⠻⠿⢿⣿⣿⣿⡿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀
-  </pre>
+⠀⠀⠙⠻⠿⠿⣿⡿⠿⠿⠟⠋⠁⠉⠛⠿⢿⣿⣿⣿⠿⠿⠟⠋⠀⠈⠙⠻⠿⣿⣿⣿⡿⠿⠿⠛⠁⠀⠀⠀⠀⠙⠻⠿⢿⣿⣿⣿⡿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀</pre>
+
+    <span class="logotype__text">
+      Личная коллекция LEGO
+    </span>
+  </div>
   <nav>
     Наборы, Детали, Личный раздел, О нас, FaQ
   </nav>
@@ -81,18 +90,22 @@
     <h4>О нас</h4>
     <article>
       <h5>Очень длинная история о том, как мы из маленькой компании выросли в огромную мегакорпорацию.</h5>
-      <section><b>Как мы зарождались<sup>главное не повторять</sup></b><br/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque
+      <section><b>Как мы зарождались<sup>главное не повторять</sup></b><br/> Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Aperiam cumque
         doloribus rerum temporibus. Assumenda consectetur ducimus minus perferendis quibusdam quis ratione?
       </section>
-      <section><b>Как мы развивались<sub>завидуйте нам</sub></b><br/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium
+      <section><b>Как мы развивались<sub>завидуйте нам</sub></b><br/> Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Incidunt laudantium
         officiis quia tenetur totam ut?
       </section>
-      <section><b>Как мы богатели</b><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut nobis quaerat
+      <section><b>Как мы богатели</b><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut nobis
+        quaerat
         quam quasi? Ab aliquid delectus dicta dignissimos dolorem dolorum ea esse est expedita id ipsum magni minima
         molestiae molestias pariatur, porro quasi quisquam repellat rerum similique veritatis voluptas?
       </section>
       <section>
-        И как говорил <cite>Lorem ipsum dolor.</cite> - <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto.</q>
+        И как говорил <cite>Lorem ipsum dolor.</cite> - <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Iusto.</q>
       </section>
       <section>
         <blockquote>
@@ -132,7 +145,9 @@
   <ul>
     <li>&lt;some_mail_address@gmail.com&gt;</li>
   </ul>
-  <p>Дата последнего редактирования: <time datetime="2020-11-15T09:54">Вчера</time></p>
+  <p>Дата последнего редактирования:
+    <time datetime="2020-11-15T09:54">Вчера</time>
+  </p>
 </footer>
 </body>
 </html>
