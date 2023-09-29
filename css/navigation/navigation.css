@@ -1,0 +1,63 @@
+.navigation {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 1px;
+  background-color: #B5922A;
+}
+
+.navigation__item {
+  display: inline-block;
+  margin: 0 5px;
+  border: 2px solid #9E5B45;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.lego-header {
+  display: grid;
+  background-color: #B5AD47;
+  grid-template-areas: 'lego-header__item_text lego-header__item_text'
+                       'lego-header__item_logotype lego-header__item_navigation';
+}
+
+.lego-header__item_text {
+  grid-area: lego-header__item_text;
+  justify-self: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #3DAD82;
+}
+
+.lego-header__item_logotype {
+  grid-area: lego-header__item_logotype;
+}
+
+.lego-header__item_navigation {
+  grid-area: lego-header__item_navigation;
+  align-self: center;
+}
+
+.logotype {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.logotype__icon {
+  width: fit-content;
+  font-size: 0.1rem;
+  color: #9E5B45;
+  border: 10px solid #9E5B45;
+  font-family: 'Fira Code', monospace;
+  border-radius: 2rem;
+}
+
+.logotype__text {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}

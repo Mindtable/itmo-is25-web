@@ -9,145 +9,286 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <h1>
-    Добро пожаловать на сайт по хранению личной коллекции LEGO!
-  </h1>
-  <div class="logotype">
+  <div class="lego-header">
+    <div class="lego-header__item lego-header__item_text">
+      Добро пожаловать на сайт по хранению личной коллекции LEGO!
+    </div>
+    <div class="lego-header__item logotype lego-header__item_logotype">
 
-    <pre class="logotype__icon">
-⠀⠀⠀⠀⠀⠀ ⣀⣤⣶⣶⣶⣶⣤⡀⠀⠀⢀⣠⣴⣶⣶⣾⣿⣿⣷⣶⣤⣀⠀⢀⣠⣴⣶⣶⣶⣶⣶⣶⣶⣤⣀⠀⠀⠀⢀⣠⣤⣶⣶⣶⣶⣶⣶⣤⣄⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⠿⠛⠛⠿⣿⣿⣄⣴⣿⣿⠿⠟⠛⠛⠛⠛⠛⠻⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⠛⠛⠿⢿⣿⣷⣄⣴⣿⣿⡿⠿⠛⠛⠛⠛⠻⢿⣿⣿⣄⠀
-⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⠀⠀⠀⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣆
-⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⠀⠀⠀⢰⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡟⠁⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⢀⣿⡿⠃⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⢸⣿⣿
-⠀⠀⠀⢠⣿⣿⠏⠀⠀⠀⠀⠀⢀⣿⣿⣿⠃⠀⠀⠀⠀⢀⣶⣶⣶⣶⣾⣿⡟⠀⠀⠀⠀⠀⣼⣿⣿⠁⠀⠀⠀⠀⣼⣿⠁⠀⠀⠀⠀⣰⣿⣿⠇⠀⠀⠀⠀⢸⣿⣿
-⠀⠀⢠⣿⣿⡏⠀⠀⠀⠀⠀⢀⣾⣿⣿⠏⠀⠀⠀⠀⠀⠚⠛⠛⠿⣿⣿⡟⠀⠀⠀⠀⠀⣼⣿⣿⣿⣦⣤⣤⣴⣾⣿⠃⠀⠀⠀⠀⢠⣿⣿⡿⠀⠀⠀⠀⠀⣾⣿⡟
-⠀⠀⣾⣿⡟⠀⠀⠀⠀⠀⠀⣼⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀⠀⠀⠀⣸⣿⠋⠉⠀⠀⠀⠉⢿⣿⡏⠀⠀⠀⠀⢀⣾⣿⣿⠃⠀⠀⠀⠀⢰⣿⣿⠇
-⠀⣸⣿⣿⠁⠀⠀⠀⠀⠀⣼⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⠇⠀⠀⠀⠀⢠⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⣼⣿⣿⡏⠀⠀⠀⠀⠀⣾⣿⡟⠀
-⢠⣿⣿⠇⠀⠀⠀⠀⠀⣼⣿⣿⣿⡏⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⣾⣿⣿⣶⠀⠀⠀⠀⠀⣾⡇⠀⠀⠀⠀⢠⣿⣿⡿⠀⠀⠀⠀⠀⣼⣿⣿⠁⠀
-⣸⣿⣿⠀⠀⠀⠀⠀⠘⠛⠛⠿⣿⠃⠀⠀⠀⠀⠸⠛⠛⠛⠛⠻⣿⡇⠀⠀⠀⠀⠀⣿⣿⡿⠃⠀⠀⠀⠀⣰⣿⠀⠀⠀⠀⠀⢼⣿⡿⠁⠀⠀⠀⠀⣰⣿⣿⠃⠀⠀
-⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⣴⣿⣿⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⣰⣿⣿⠃⠀⠀⠀
-⢿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠃⠀⠀⠀⠀
-⠘⢿⣿⣷⣤⣤⣤⣤⣤⣴⣾⣿⣿⣿⣿⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⣿⣿⣷⣤⣤⣄⣠⣤⣤⣶⣿⣿⡿⠋⠙⢿⣿⣷⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀⠀
-⠀⠀⠙⠻⠿⠿⣿⡿⠿⠿⠟⠋⠁⠉⠛⠿⢿⣿⣿⣿⠿⠿⠟⠋⠀⠈⠙⠻⠿⣿⣿⣿⡿⠿⠿⠛⠁⠀⠀⠀⠀⠙⠻⠿⢿⣿⣿⣿⡿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀</pre>
+      <pre class="logotype__icon">
+  ⠀⠀⠀⠀⠀⠀ ⣀⣤⣶⣶⣶⣶⣤⡀⠀⠀⢀⣠⣴⣶⣶⣾⣿⣿⣷⣶⣤⣀⠀⢀⣠⣴⣶⣶⣶⣶⣶⣶⣶⣤⣀⠀⠀⠀⢀⣠⣤⣶⣶⣶⣶⣶⣶⣤⣄⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⠿⠛⠛⠿⣿⣿⣄⣴⣿⣿⠿⠟⠛⠛⠛⠛⠛⠻⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⠛⠛⠿⢿⣿⣷⣄⣴⣿⣿⡿⠿⠛⠛⠛⠛⠻⢿⣿⣿⣄⠀
+  ⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⠀⠀⠀⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣆
+  ⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⠀⠀⠀⢰⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡟⠁⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⢀⣿⡿⠃⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⢸⣿⣿
+  ⠀⠀⠀⢠⣿⣿⠏⠀⠀⠀⠀⠀⢀⣿⣿⣿⠃⠀⠀⠀⠀⢀⣶⣶⣶⣶⣾⣿⡟⠀⠀⠀⠀⠀⣼⣿⣿⠁⠀⠀⠀⠀⣼⣿⠁⠀⠀⠀⠀⣰⣿⣿⠇⠀⠀⠀⠀⢸⣿⣿
+  ⠀⠀⢠⣿⣿⡏⠀⠀⠀⠀⠀⢀⣾⣿⣿⠏⠀⠀⠀⠀⠀⠚⠛⠛⠿⣿⣿⡟⠀⠀⠀⠀⠀⣼⣿⣿⣿⣦⣤⣤⣴⣾⣿⠃⠀⠀⠀⠀⢠⣿⣿⡿⠀⠀⠀⠀⠀⣾⣿⡟
+  ⠀⠀⣾⣿⡟⠀⠀⠀⠀⠀⠀⣼⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠁⠀⠀⠀⠀⣸⣿⠋⠉⠀⠀⠀⠉⢿⣿⡏⠀⠀⠀⠀⢀⣾⣿⣿⠃⠀⠀⠀⠀⢰⣿⣿⠇
+  ⠀⣸⣿⣿⠁⠀⠀⠀⠀⠀⣼⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⠇⠀⠀⠀⠀⢠⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⣼⣿⣿⡏⠀⠀⠀⠀⠀⣾⣿⡟⠀
+  ⢠⣿⣿⠇⠀⠀⠀⠀⠀⣼⣿⣿⣿⡏⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⣾⣿⣿⣶⠀⠀⠀⠀⠀⣾⡇⠀⠀⠀⠀⢠⣿⣿⡿⠀⠀⠀⠀⠀⣼⣿⣿⠁⠀
+  ⣸⣿⣿⠀⠀⠀⠀⠀⠘⠛⠛⠿⣿⠃⠀⠀⠀⠀⠸⠛⠛⠛⠛⠻⣿⡇⠀⠀⠀⠀⠀⣿⣿⡿⠃⠀⠀⠀⠀⣰⣿⠀⠀⠀⠀⠀⢼⣿⡿⠁⠀⠀⠀⠀⣰⣿⣿⠃⠀⠀
+  ⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⣴⣿⣿⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⣰⣿⣿⠃⠀⠀⠀
+  ⢿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠃⠀⠀⠀⠀
+  ⠘⢿⣿⣷⣤⣤⣤⣤⣤⣴⣾⣿⣿⣿⣿⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⣿⣿⣷⣤⣤⣄⣠⣤⣤⣶⣿⣿⡿⠋⠙⢿⣿⣷⣦⣤⣄⣀⣤⣤⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀⠀
+  ⠀⠀⠙⠻⠿⠿⣿⡿⠿⠿⠟⠋⠁⠉⠛⠿⢿⣿⣿⣿⠿⠿⠟⠋⠀⠈⠙⠻⠿⣿⣿⣿⡿⠿⠿⠛⠁⠀⠀⠀⠀⠙⠻⠿⢿⣿⣿⣿⡿⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀</pre>
 
-    <span class="logotype__text">
-      Личная коллекция LEGO
-    </span>
+      <span class="logotype__text">
+        Личная коллекция LEGO
+      </span>
+    </div>
+    <div class="lego-header__item_navigation">
+      <span class="navigation__item">Наборы</span>
+      <span class="navigation__item">Детали</span>
+      <span class="navigation__item">Личный раздел</span>
+      <span class="navigation__item">О нас</span>
+      <span class="navigation__item">FaQ</span>
+    </div>
   </div>
-  <nav>
-    Наборы, Детали, Личный раздел, О нас, FaQ
-  </nav>
 </header>
 <main>
   <section>
-    <h4>Наборы</h4>
-    <ol start="A" type="A">
-      <li>
-        <p>Ваще крутой набор</p>
-        <ul>
-          <li>Награда 1</li>
-          <li>Награда 2</li>
-          <li>Награда 3</li>
-          <li>Награда 4</li>
-        </ul>
-        <footer>
-          <b>Вот столько наград завоевал, представляете!</b>
-        </footer>
-      </li>
-      <li>Набор крутой, но уже не пушка</li>
-      <li>Набор чуть похуже</li>
-      <li>Набор так и сяк</li>
-    </ol>
-    <footer>
-      <i>Зачем начинать нумерацию с 1, если можно жить как программист??</i>
-    </footer>
+    <div class="page">
+      <div class="page__header">
+        <span class="page__header_text">
+          Наборы
+        </span>
+      </div>
+      <div class="page__content">
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Ваще крутой набор
+          </span>
+          <img class="page__content_item_image"
+               src="doc/photo-lego.jpeg"
+               alt="lego_human"
+          >
+          <div class="page__content_item_rewards">
+            <ul>
+              <li>Награда 1</li>
+              <li>Награда 2</li>
+              <li>Награда 3</li>
+              <li>Награда 4</li>
+            </ul>
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Набор крутой, но уже не пушка
+          </span>
+          <div class="page__content_item_image">
+
+          </div>
+          <div class="page__content_item_rewards">
+
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Набор чуть похуже
+          </span>
+          <div class="page__content_item_image">
+          </div>
+          <div class="page__content_item_rewards">
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Набор так и сяк
+          </span>
+          <div class="page__content_item_image">
+          </div>
+          <div class="page__content_item_rewards">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section>
-    <h4>Детали</h4>
-    <ul>
-      <li>Деталь 1</li>
-      <li>Деталь 2</li>
-      <li>Деталь 3</li>
-      <li>Деталь 4</li>
-      <li>Деталь 5</li>
-    </ul>
+    <div class="page">
+      <div class="page__header">
+        <span class="page__header_text">
+          Детали
+        </span>
+      </div>
+      <div class="page__content">
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Деталь 1
+          </span>
+          <img class="page__content_item_image"
+               src="doc/photo-lego.jpeg"
+               alt="lego_human"
+          >
+          <div class="page__content_item_rewards">
+
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Деталь 2
+          </span>
+          <img class="page__content_item_image"
+               src="doc/lego.png"
+               alt="lego_human"
+          >
+          <div class="page__content_item_rewards">
+
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Деталь 3
+          </span>
+          <img class="page__content_item_image"
+               src="doc/lego.png"
+               alt="lego_human"
+          >
+          <div class="page__content_item_rewards">
+
+          </div>
+        </div>
+        <div class="page__content_item">
+          <span class="page__content_item_title">
+              Деталь 4
+          </span>
+          <img class="page__content_item_image"
+               src="doc/photo-lego.jpeg"
+               alt="lego_human"
+          >
+          <div class="page__content_item_rewards">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section>
-    <h4>Личный раздел</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eaque error est exercitationem hic incidunt
-      porro quae unde, vero vitae?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eaque error est exercitationem hic incidunt
-      porro quae unde, vero vitae?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eaque error est exercitationem hic incidunt
-      porro quae unde, vero vitae?</p>
+    <div class="article">
+      <div class="article__header">
+        <span>
+          Личный раздел
+        </span>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Lorem ipsum dolor.
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet molestias nisi nostrum obcaecati praesentium rerum, saepe sunt ut voluptatum.</span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Lorem ipsum dolor.
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet molestias nisi nostrum obcaecati praesentium rerum, saepe sunt ut voluptatum.</span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Lorem ipsum dolor.
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet molestias nisi nostrum obcaecati praesentium rerum, saepe sunt ut voluptatum.</span>
+        </div>
+      </div>
+
+    </div>
   </section>
   <section>
-    <h4>О нас</h4>
-    <article>
-      <h5>Очень длинная история о том, как мы из маленькой компании выросли в огромную мегакорпорацию.</h5>
-      <section><b>Как мы зарождались<sup>главное не повторять</sup></b><br/> Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Aperiam cumque
-        doloribus rerum temporibus. Assumenda consectetur ducimus minus perferendis quibusdam quis ratione?
-      </section>
-      <section><b>Как мы развивались<sub>завидуйте нам</sub></b><br/> Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Incidunt laudantium
-        officiis quia tenetur totam ut?
-      </section>
-      <section><b>Как мы богатели</b><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut nobis
-        quaerat
-        quam quasi? Ab aliquid delectus dicta dignissimos dolorem dolorum ea esse est expedita id ipsum magni minima
-        molestiae molestias pariatur, porro quasi quisquam repellat rerum similique veritatis voluptas?
-      </section>
-      <section>
-        И как говорил <cite>Lorem ipsum dolor.</cite> - <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Iusto.</q>
-      </section>
-      <section>
-        <blockquote>
-          <p>В лес ходить, да не дрова рубить</p>
-          <cite>JSON stateHM</cite>
-        </blockquote>
-      </section>
-    </article>
-    <aside>
-      Хочешь стать таким же богатым? Устраивайся к нам на работу!
-    </aside>
+    <div class="article">
+      <div class="article__header">
+        <span>
+          О нас.
+        </span>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Очень длинная история о том, как мы из маленькой компании выросли в огромную мегакорпорацию.
+          </span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Как мы зарождались
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, eligendi, necessitatibus! Blanditiis, commodi eius hic illo impedit in, ipsam laborum non odit placeat sapiente similique, totam voluptas? Aperiam, dignissimos ea enim non quaerat reiciendis saepe sequi tempora voluptates. Adipisci architecto consectetur consequuntur dolorem doloribus dolorum eaque eius exercitationem explicabo incidunt ipsam iste itaque libero nihil officia optio porro, quo repudiandae, sed similique sit tenetur voluptatum. A aliquid aperiam consectetur consequatur cum deleniti dicta, distinctio earum error et facere facilis fugit in incidunt iusto laboriosam libero minima molestiae necessitatibus non odit praesentium quidem quis repellendus reprehenderit sed tenetur unde vel voluptatum.
+          </span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Как мы развивались
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet molestias nisi nostrum obcaecati praesentium rerum, saepe sunt ut voluptatum.</span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            Как мы богатели
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eveniet molestias nisi nostrum obcaecati praesentium rerum, saepe sunt ut voluptatum.</span>
+        </div>
+      </div>
+    </div>
   </section>
+
   <section>
-    <h4>FaQ</h4>
-    <dl>
-      <dt>У вас дорогие наборы?</dt>
-      <dd>Нет!!</dd>
-      <dt>А расскажите анекдот?</dt>
-      <dd>Запросто, да хоть два!</dd>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eveniet!</dd>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eveniet!</dd>
-    </dl>
+    <div class="article">
+      <div class="article__header">
+        <span>
+          FaQ
+        </span>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            У вас дорогие наборы?
+          </span>
+        </div>
+        <div class="article__paragraph_content">
+          <span>
+            Нет!!
+          </span>
+        </div>
+      </div>
+      <div class="article__paragraph">
+        <div class="article__paragraph_header">
+          <span>
+            А расскажите анекдот?
+          </span>
+        </div>
+        <div class="article__paragraph_content article__paragraph_content_crossed">
+          <span>
+            Запросто, да хоть два!
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
-<footer>
-  <p>Немного кода на Java</p>
-  <pre>
-    <code class="language-java">
-      public static void main(String[] args) {
-          System.out.println("Hello, web!");
-      }
-    </code>
-  </pre>
-  <p>
-    Основная контактная информация:
-  </p>
-  <ul>
-    <li>&lt;some_mail_address@gmail.com&gt;</li>
-  </ul>
-  <p>Дата последнего редактирования:
-    <time datetime="2020-11-15T09:54">Вчера</time>
-  </p>
-</footer>
 </body>
 </html>

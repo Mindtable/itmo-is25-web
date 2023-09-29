@@ -1,0 +1,29 @@
+.article {
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #B5AD47;
+}
+
+.article__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: #3DAD82;
+}
+
+.article__paragraph_content {
+  padding-top: 10px;
+  text-indent: 20px;
+  line-height: 1.5;
+}
+
+.article__paragraph_content_crossed {
+  text-decoration: line-through
+}
+
+.article__paragraph_header {
+  padding-top: 5px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-indent: 5px;
+}
