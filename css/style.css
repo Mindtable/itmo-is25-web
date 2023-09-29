@@ -1,2 +1,5 @@
 @import "normalize.css";
 @import "logo/logo.css";
+@import "navigation/navigation.css";
+@import "page/page.css";
+@import "article/article.css";
