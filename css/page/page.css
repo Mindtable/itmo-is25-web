@@ -39,4 +39,5 @@
 .page__content_item_image {
   object-fit: scale-down;
   height: 200px;
+  filter: drop-shadow(5px 5px);
 }
