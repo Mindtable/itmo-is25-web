@@ -25,17 +25,17 @@
   padding: 20px 0;
 }
 
-.page__content_item:nth-child(even) {
-  background-color: #B5AD60;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .page__content {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1em;
     grid-row-gap: 20px;
   }
+}
+
+.page__content_item:nth-child(even) {
+  background-color: #B5AD60;
 }
 
 .page__content_item {

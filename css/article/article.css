@@ -8,7 +8,7 @@
   background-color: #B5AD60;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   .article__paragraph {
     padding-left: 0.5em;
     padding-right: 0.5em;
