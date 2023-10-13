@@ -1,6 +1,6 @@
 .page {
   display: grid;
-  padding-top: 35px;
+  padding-top: 0.5rem;
   font-family: 'Montserrat', sans-serif;
   background-color: #B5AD47;
 }
