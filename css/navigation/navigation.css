@@ -16,9 +16,19 @@
   text-align: center;
 }
 
+.navigation__item:nth-child(odd) {
+  background-color: #B5AD60;
+}
+
 .lego-header {
+  padding: 0.3em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: grid;
-  background-color: #B5AD47;
+  border-bottom: solid #3F98F2 5px;
+  background-color: #F2943F;
   grid-template-areas: 'lego-header__item_text lego-header__item_text'
                        'lego-header__item_logotype lego-header__item_navigation';
 }
@@ -28,7 +38,9 @@
   justify-self: center;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-color: #3DAD82;
+  background-color: #736C57;
+  color: #fff;
+  padding: 2px;
 }
 
 .lego-header__item_logotype {

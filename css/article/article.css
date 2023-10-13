@@ -4,6 +4,18 @@
   background-color: #B5AD47;
 }
 
+.article__paragraph:nth-child(even) {
+  background-color: #B5AD60;
+}
+
+@media only screen and (max-width: 768px) {
+  .article__paragraph {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+  }
+}
+
 .article__header {
   text-align: center;
   font-size: 2rem;
