@@ -7,6 +7,7 @@
 }
 
 .navigation__item {
+  grid-area: navigation__item;
   display: inline-block;
   margin: 0 5px;
   border: 2px solid #9E5B45;
@@ -22,15 +23,37 @@
 
 .lego-header {
   padding: 0.3em;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   width: 100%;
+  box-sizing: border-box;
   z-index: 1000;
   display: grid;
   border-bottom: solid #3F98F2 5px;
   background-color: #F2943F;
   grid-template-areas: 'lego-header__item_text lego-header__item_text'
                        'lego-header__item_logotype lego-header__item_navigation';
+}
+
+@media only screen and (max-width: 768px) {
+  .lego-header__item_navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lego-header__item_logotype {
+    justify-self: center;
+  }
+
+  .lego-header {
+    grid-template-areas: 'lego-header__item_logotype'
+                         'lego-header__item_text'
+                         'lego-header__item_navigation'
+                         'lego-header__item_navigation'
+                         'lego-header__item_navigation'
+                         'lego-header__item_navigation'
+  }
 }
 
 .lego-header__item_text {
@@ -65,6 +88,7 @@
   font-size: 0.1rem;
   color: #9E5B45;
   border: 10px solid #9E5B45;
+  background-color: #ffffff;
   font-family: 'Fira Code', monospace;
   border-radius: 2rem;
 }
