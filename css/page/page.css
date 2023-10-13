@@ -1,6 +1,6 @@
 .page {
   display: grid;
-  padding-top: 10px;
+  padding-top: 35px;
   font-family: 'Montserrat', sans-serif;
   background-color: #B5AD47;
 }
@@ -23,6 +23,19 @@
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 10px;
   padding: 20px 0;
+}
+
+.page__content_item:nth-child(even) {
+  background-color: #B5AD60;
+}
+
+@media only screen and (max-width: 768px) {
+  .page__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 20px;
+  }
 }
 
 .page__content_item {
