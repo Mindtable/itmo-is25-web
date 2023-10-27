@@ -15,10 +15,24 @@
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+
+  /* prevent-select */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.navigation__item:hover {
+  opacity: .7;
 }
 
 .navigation__item:nth-child(odd) {
   background-color: #B5AD60;
+}
+
+.navigation__item_active {
+  text-decoration: underline;
+  border: 5px solid white;
 }
 
 .lego-header {
