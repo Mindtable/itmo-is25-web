@@ -108,7 +108,6 @@ function deactivateButton(button) {
 
 function main(event) {
   init()
-
   console.log(activeElement)
   console.log(Pages.Sets)
   console.log(document.getElementById(Pages.Sets))
