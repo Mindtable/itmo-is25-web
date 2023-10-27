@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main/sript.js"></script>
 </head>
 <body>
 <div class="lego-header">
@@ -41,15 +42,15 @@
       </span>
   </div>
   <div class="lego-header__item_navigation">
-    <span class="navigation__item">Наборы</span>
-    <span class="navigation__item">Детали</span>
-    <span class="navigation__item">Личный раздел</span>
-    <span class="navigation__item">О нас</span>
-    <span class="navigation__item">FaQ</span>
+    <span class="navigation__item" id="setsNavButton">Наборы</span>
+    <span class="navigation__item" id="detailsNavButton">Детали</span>
+    <span class="navigation__item" id="personalNavButton">Личный раздел</span>
+    <span class="navigation__item" id="aboutUsNavButton">О нас</span>
+    <span class="navigation__item" id="faqNavButton">FaQ</span>
   </div>
 </div>
 <main>
-  <div class="page">
+  <div class="page" id="setsPage">
     <div class="page__header">
         <span class="page__header_text">
           Наборы
@@ -103,8 +104,7 @@
       </div>
     </div>
   </div>
-  <section>
-    <div class="page">
+  <div class="page" id="detailsPage">
       <div class="page__header">
         <span class="page__header_text">
           Детали
@@ -168,10 +168,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="article">
+  </div>
+  <div class="article" id="personalPage">
       <div class="article__header">
         <span>
           Личный раздел
@@ -209,9 +207,7 @@
       </div>
 
     </div>
-  </section>
-  <section>
-    <div class="article">
+  <div class="article" id="aboutUsPage">
       <div class="article__header">
         <span>
           О нас.
@@ -257,10 +253,8 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <section>
-    <div class="article">
+    <div class="article" id="faqPage">
       <div class="article__header">
         <span>
           FaQ
@@ -291,7 +285,6 @@
         </div>
       </div>
     </div>
-  </section>
 </main>
 </body>
 </html>
