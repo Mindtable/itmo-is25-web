@@ -14,17 +14,6 @@ const Pages = {
   FaQ: 'faqPage',
 }
 
-const Visibility = {
-  Visible: 'visible',
-  Hidden: 'hidden',
-  None: 'none',
-}
-
-const Display = {
-  Block: 'block',
-  None: 'none'
-}
-
 const buttonsToSections = new Map()
 buttonsToSections.set(
   Buttons.Sets,
@@ -55,8 +44,7 @@ function init() {
     let elementById = document.getElementById(x.id);
     if (elementById === null) continue
 
-    elementById.style.visibility = Visibility.Hidden
-    elementById.style.display = Display.None
+    hideElement(elementById)
 
     initButton(y, x.id)
   }
@@ -88,13 +76,11 @@ function initButton(buttonId, pageId) {
 }
 
 function showElement(element) {
-  element.style.visibility = Visibility.Visible
-  element.style.display = Display.Block
+  element.classList.remove("hidden")
 }
 
 function hideElement(element) {
-  element.style.visibility = Visibility.Hidden
-  element.style.display = Display.None
+  element.classList.add("hidden")
 }
 
 function activateButton(button) {
@@ -105,9 +91,23 @@ function deactivateButton(button) {
   button.classList.remove("navigation__item_active")
 }
 
+function initRedirectButton() {
+  let buttonId = "redirectButton"
+  let button = document.getElementById(buttonId)
+
+  button.addEventListener(
+    "click",
+    function () {
+      window.location.href = "pages/submit/index.html"
+    }
+  )
+
+  console.log(button, "is initialized with click listeners kek")
+}
 
 function main(event) {
   init()
+  initRedirectButton()
   console.log(activeElement)
   console.log(Pages.Sets)
   console.log(document.getElementById(Pages.Sets))
