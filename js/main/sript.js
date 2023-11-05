@@ -1,9 +1,12 @@
+import '../submit/script.js'
+
 const Buttons = {
   Sets: 'setsNavButton',
   Details: 'detailsNavButton',
   Personal: 'personalNavButton',
   AboutUs: 'aboutUsNavButton',
   FaQ: 'faqNavButton',
+  AddLegoPart: 'addLegoPartButton',
 }
 
 const Pages = {
@@ -12,6 +15,7 @@ const Pages = {
   Personal: 'personalPage',
   AboutUs: 'aboutUsPage',
   FaQ: 'faqPage',
+  AddLegoPart: 'addLegoPartPage',
 }
 
 const buttonsToSections = new Map()
@@ -31,10 +35,14 @@ buttonsToSections.set(
 buttonsToSections.set(
   Buttons.FaQ,
   {id: Pages.FaQ})
+buttonsToSections.set(
+  Buttons.AddLegoPart,
+  {id: Pages.AddLegoPart}
+)
 
 let activeElement = {
   button: Buttons.Sets,
-  page: buttonsToSections.get(Buttons.Sets)
+  page: Object.assign({}, buttonsToSections.get(Buttons.Sets))
 }
 
 function init() {
@@ -42,7 +50,10 @@ function init() {
     const x = buttonsToSections.get(y)
     console.log(x)
     let elementById = document.getElementById(x.id);
-    if (elementById === null) continue
+    if (elementById === null) {
+      console.log(`Element by id ${x.id} is not found`)
+      continue
+    }
 
     hideElement(elementById)
 
@@ -71,12 +82,18 @@ function initButton(buttonId, pageId) {
 
       activeElement.button = buttonId
       activeElement.page = page
+
+      localStorage.setItem("activeElement", JSON.stringify({
+        "page": pageId,
+        "button": buttonId,
+      }))
     }
   )
 }
 
 function showElement(element) {
   element.classList.remove("hidden")
+  console.log("Show element ", element)
 }
 
 function hideElement(element) {
@@ -108,11 +125,19 @@ function initRedirectButton() {
 function main(event) {
   init()
   initRedirectButton()
+
+  const item = localStorage.getItem("activeElement");
+  if (item !== null && item.length !== 0) {
+    let activeElementCache = JSON.parse(item)
+    activeElement.button = activeElementCache.button
+    activeElement.page.id = activeElementCache.page
+  }
+
   console.log(activeElement)
   console.log(Pages.Sets)
   console.log(document.getElementById(Pages.Sets))
-  showElement(document.getElementById(Pages.Sets))
-  activateButton(document.getElementById(Buttons.Sets))
+  showElement(document.getElementById(activeElement.page.id))
+  activateButton(document.getElementById(activeElement.button))
 
   const timeElapsed = (new Date() - currentTime) / 1000
   let footer = document.createElement('footer')

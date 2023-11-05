@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main/sript.js"></script>
+  <script type="module" src="js/main/sript.js"></script>
 </head>
 <body>
 <div class="lego-header">
@@ -46,6 +46,7 @@
     <span class="navigation__item" id="detailsNavButton">Детали</span>
     <span class="navigation__item" id="personalNavButton">Личный раздел</span>
     <span class="navigation__item" id="aboutUsNavButton">О нас</span>
+    <span class="navigation__item" id="addLegoPartButton">Добавить новую деталь</span>
     <span class="navigation__item" id="faqNavButton">FaQ</span>
     <span class="navigation__item" id="redirectButton">Test</span>
   </div>
@@ -254,7 +255,6 @@
       </div>
     </div>
   </div>
-
   <div class="article" id="faqPage">
     <div class="article__header">
         <span>
@@ -283,6 +283,31 @@
           <span>
             Запросто, да хоть два!
           </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="addLegoPartPage">
+    <div class="page__header">
+      <span class="page__header_text">
+          Добавить новую деталь
+        </span>
+    </div>
+    <div class="page__content" id="addLegoPageContent">
+      <div class="page__content_item">
+        <form id="addLegoPageForm" onsubmit="return false">
+          <div class="page__content_item_title lego-part-submit-form__item">
+            <label for="addLegoPartPageNameId">Название</label>
+            <input name="name" id="addLegoPartPageNameId" type="text">
+          </div>
+          <div class="page__content_item_title lego-part-submit-form__item">
+            Изображение
+            <input name="picture" id="addLegoPartPageImageId" type="file">
+          </div>
+          <div class="page__content_item_title lego-part-submit-form__item">
+            <input type="submit">
+          </div>
+        </form>
       </div>
     </div>
   </div>
