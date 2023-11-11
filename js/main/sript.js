@@ -1,4 +1,6 @@
 import '../submit/script.js'
+import '../fetch/script.js'
+import {CommonEvents} from "../common/common.js";
 
 const Buttons = {
   Sets: 'setsNavButton',
@@ -87,6 +89,10 @@ function initButton(buttonId, pageId) {
         "page": pageId,
         "button": buttonId,
       }))
+
+      if (buttonId === Buttons.Details) {
+        document.dispatchEvent(new Event(CommonEvents.DetailsPageOpened))
+      }
     }
   )
 }
@@ -131,6 +137,10 @@ function main(event) {
     let activeElementCache = JSON.parse(item)
     activeElement.button = activeElementCache.button
     activeElement.page.id = activeElementCache.page
+
+    if (activeElement.button === Buttons.Details) {
+      document.dispatchEvent(new Event(CommonEvents.DetailsPageOpened))
+    }
   }
 
   console.log(activeElement)

@@ -1,3 +1,5 @@
+import "../common/common.js"
+
 (function () {
     document.addEventListener("DOMContentLoaded", init)
   }

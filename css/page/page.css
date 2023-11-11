@@ -12,6 +12,10 @@
   background-color: #3DAD82;
 }
 
+.page__header_error {
+  background-color: #de375b;
+}
+
 .page__header_text {
   font-size: 2rem;
   font-weight: 900;
