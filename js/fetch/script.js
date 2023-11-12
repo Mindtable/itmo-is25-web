@@ -121,8 +121,8 @@ function main() {
 }
 
 async function getData(filter) {
-  const url = `158.160.26.89`;
-  let response = await fetch(`http://${url}:8080/details?filter=${filter}`)
+  const url = `www.mindtable.ru`;
+  let response = await fetch(`https://${url}/details?filter=${filter}`)
 
   let json = await response.json()
   await sleep(3000)
